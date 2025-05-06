@@ -12,6 +12,9 @@ class Settings(BaseSettings):
     algorithm: str
     access_token_expire_minutes: int
 
+    REDIS_HOST: str
+    REDIS_PORT: int
+
     class Config:
         env_file = ".env"  # Use a .env file for local development
 
